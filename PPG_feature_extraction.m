@@ -3,8 +3,9 @@
 % Email: a.attarpour@mail.utoronto.ca
 % Explanation:
 % this function gets a PPG signal, its sampling rate (Fs), 
-% cut-off frequency of a lowpass (fl), and the sampling rate of fMRI time seris (fs_fMRI).
-% The code uses func_maxminfinder to find the min and max of the signals,
+% cut-off frequency of a lowpass (fl), and the sampling rate of fMRI time seris (fs_fMRI). 
+% It also recieves the indexes of 5000 values that the Siemens scanners add to PPG signals.
+% The code uses func_maxminfinder.m to find the min and max of the signals.
 % Outputs: the features (PIR, SDPPG, b/a, and HRV) will be extracted, interpolated,
 % and then resampled to fs_fMRI, so that they can be analyzed together. 
 % Example: [resampled_PIR, resampled_SDPPG, resampled_HRV, resampled_ba] = PPG_feature_extraction(ppg, idx5000, 50, 4, 1/0.38)
