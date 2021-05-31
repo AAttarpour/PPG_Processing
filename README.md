@@ -22,12 +22,14 @@ The following image shows a PPG signal and how maxminfinder function works. Note
 
 Subsequently, PIR and HRV features are extracetd, interpolated, and then resampled to the sample frequency of our fMRI signals (1/0.38). The following images show these features as an example. 
 
-![image](https://user-images.githubusercontent.com/70978461/120127837-79eca200-c18e-11eb-9127-ae3e00815b15.png)
+![image](https://user-images.githubusercontent.com/70978461/120212579-274bce00-c200-11eb-89a0-4251a134731b.png)
 
 
 ![image](https://user-images.githubusercontent.com/70978461/120128270-a523c100-c18f-11eb-9b1f-0c31641a92db.png)
 
 Finally, second derivative of PPG signal (SDPPG) is calculated. Its maximum and minimum indexes and values are obtained using func_maxmminfinder.m. In the next step, the same procedure is done to obtain b/a feature. The following images show SDPPG and its determined minimum and maximums in addition to b/a.
+
+![image](https://user-images.githubusercontent.com/70978461/120212062-91b03e80-c1ff-11eb-9e65-981c66eb1846.png)
 
 
 ![image](https://user-images.githubusercontent.com/70978461/120131341-3eee6c80-c196-11eb-9d6b-21d8452c7189.png)
