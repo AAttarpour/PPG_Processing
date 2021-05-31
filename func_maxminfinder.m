@@ -2,7 +2,8 @@
 % Github ID: AAttarpour
 % Email: a.attarpour@mail.utoronto.ca
 % Explanation:
-% This function recieves the PPG or Second Derivative of PPG signal and find its minimum and maximums in each cycle.
+% This function recieves the PPG or Second Derivative of PPG signal and find its minimum and maximums in each cycle. 
+% It also recieves the indexes of 5000 values that the Siemens scanners add to PPG signals.
 % Example: [maxpks, maxind, minpks, minind] = func_maxminfinder(signal,idx5000)
 function [maxpks, maxind, minpks, minind] = func_maxminfinder(a,idx5000)
 L = length(idx5000);
