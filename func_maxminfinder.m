@@ -2,11 +2,8 @@
 % Github ID: AAttarpour
 % Email: a.attarpour@mail.utoronto.ca
 % Explanation:
-    % 1) this function gets a signal, its sampling rate (fs), 
-    % cut-off frequency of a lowpass and highpass filters (fl and fh), and 
-    % their order (n). The output is the filtered signal.
-    % 2) if fh (or fl) equals 0, it won't apply that highpass (or lowpass) filter 
-% Example: filtered_s = func_filter(s, 250, 10, 0.05, 4)
+% This function recieves the PPG or Second Derivative of PPG signal and find its minimum and maximums in each cycle.
+% Example: [maxpks, maxind, minpks, minind] = func_maxminfinder(signal,idx5000)
 function [maxpks, maxind, minpks, minind] = func_maxminfinder(a,idx5000)
 L = length(idx5000);
 idx1 = idx5000;
