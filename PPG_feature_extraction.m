@@ -79,7 +79,7 @@ figure;plot(ba);title('b/a');
 %% resample PIR, SDPPG, HRV, and b/a to fMRI sampling rate
 %% 
 % resampling data
-% low-pass filter with 1 Hz cutt-off frequency to avoid aliasing
+% low-pass filter with 1.3 Hz cutt-off frequency to avoid aliasing
 filtered_PIR=func_filter(PIR,Fs,1.3,0,4);
 resampled_PIR = filtered_PIR(1:Fs/fs_fMRI:end);
 
