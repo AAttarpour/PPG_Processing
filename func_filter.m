@@ -1,7 +1,7 @@
 % This code is writted by Ahmadreza Attarpour
 % Github ID: AAttarpour
 % Email: a.attarpour@mail.utoronto.ca
-% Explanation:
+%  Explanation:
     % 1) this function gets a signal, its sampling rate (fs), 
     % cut-off frequency of a lowpass and highpass filters (fl and fh), and 
     % their order (n). The output is the filtered signal.
